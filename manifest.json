@@ -3,10 +3,6 @@
     "name": "Watch Party (Basic)",
     "version": "1.0",
     "description": "Synchronizes video playback for watch parties",
-    "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
-    },
 
     "permissions": ["activeTab", "storage"],
     "background": {
