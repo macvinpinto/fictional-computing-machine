@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Watch Party (Basic)",
+    "version": "1.0",
+    "description": "Synchronizes video playback for watch parties",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "action": {
+      "default_popup": "popup/popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.hotstar.com/*"],
+        "js": ["content-script.js"]
+      }
+    ]
+}
